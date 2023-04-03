@@ -1,0 +1,102 @@
+<div class="page-title">
+    <h3>Manage Projects</h3>
+</div>
+<nav class="user-tabs project-tabs">
+    <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/employer/manage-projects/all-projects'">All Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink] = "'/employer/manage-projects/pending-projects'">Pending Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink] = "'/employer/manage-projects/ongoing-projects'">Ongoing Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/employer/manage-projects/completed-projects'">Completed Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/employer/manage-projects/cancelled-projects'">Cancelled Projects</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- project list -->
+<div class="my-projects-list" *ngFor = "let emp of empprojects">
+    <div class="row">
+        <div class="col-lg-10 flex-wrap">
+            <div class="projects-card flex-fill">
+                <div class="card-body">
+                    <div class="projects-details align-items-center">
+                        <div class="project-info">
+                            <span>{{emp.company}}</span>
+                            <h2>{{emp.content}}</h2>
+                            <div class="customer-info">
+                                <ul class="list-details">
+                                    <li>
+                                        <div class="slot">
+                                            <p>Price type</p>
+                                            <h5>{{emp.type}}</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slot">
+                                            <p>Location</p>
+                                            <h5><img [src]="emp.img" height="13" alt="Lang"> UK</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="slot">
+                                            <p>Expiry</p>
+                                            <h5>{{emp.days}} Days Left</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-hire-info">
+                            <div class="content-divider"></div>
+                            <div class="projects-amount">
+                                <h3>$ {{emp.price}}</h3>
+                                <h5>in {{emp.day}} Days</h5>
+                            </div>
+                            <div class="content-divider"></div>
+                            <div class="projects-action text-center">
+                                <a [routerLink] = "'/employer/milestones/overviews'" class="projects-btn">View Details </a>
+                                <a href="javascript:void(0);" class="hired-detail">Hired on {{emp.date}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex flex-wrap">
+            <div class="projects-card flex-fill">
+                <div class="card-body p-2">
+                    <div class="prj-proposal-count text-center hired">
+                        <h3>Hired</h3>
+                        <img [src]="emp.image" alt="" class="img-fluid">
+                        <p class="mb-0">{{emp.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /project list -->
+
+
+<!-- pagination -->
+<div class="row">
+    <div class="col-md-12">
+        <ul class="paginations list-pagination">
+            <li><a href="javascript:void(0);"> <i class="fas fa-angle-left"></i> Previous</a></li>
+            <li><a href="javascript:void(0);">1</a></li>
+            <li><a href="javascript:void(0);" class="active">2</a></li>
+            <li><a href="javascript:void(0);">3</a></li>
+            <li><a href="javascript:void(0);">4</a></li>
+            <li><a href="javascript:void(0);">Next <i class="fas fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- /pagination -->

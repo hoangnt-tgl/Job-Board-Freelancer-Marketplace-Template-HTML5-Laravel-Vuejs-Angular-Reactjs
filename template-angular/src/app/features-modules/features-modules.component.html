@@ -1,0 +1,22 @@
+<app-header *ngIf="isuserHeader == true"></app-header>
+<div
+  class="main-wrapper"
+  [ngClass]="{
+    'menu-opened': showMiniSidebar == true,
+    'chat-page': page === 'message' || page === 'chats',
+    'body-two': base === 'home2',
+    'body-three': base === 'home3',
+    'body-four': base === 'home4',
+    'body-five': base === 'home5',
+    'dashboard-page':page === 'dashboard' || page === 'dashboards',
+    'expand-menu': expandMenu == true && miniSidebar == true ,
+    'mini-sidebar': miniSidebar == true,
+    'slide-nav': mobileSidebar == true 
+  }"
+>
+  <router-outlet></router-outlet>
+  <div class="sidebar-overlay" (click)="toggleMobileSideBar()"   [ngClass]="{
+    'opened': mobileSidebar == true 
+  }"></div>
+</div>
+<app-footer *ngIf="isFooter == true"></app-footer>

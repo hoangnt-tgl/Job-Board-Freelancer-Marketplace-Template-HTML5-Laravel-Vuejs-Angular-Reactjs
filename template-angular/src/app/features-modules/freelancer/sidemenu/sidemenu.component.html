@@ -1,0 +1,21 @@
+<div class="settings-widget">
+    <div class="settings-header d-sm-flex flex-row flex-wrap text-center text-sm-start align-items-center">
+        <a [routerLink] = "'/freelancer/user-details'"><img alt="profile image" src="assets/img/user/avatar-1.jpg" class="avatar-lg rounded-circle"></a>
+        <div class="ms-sm-3 ms-md-0 ms-lg-3 mt-2 mt-sm-0 mt-md-2 mt-lg-0">
+            <p class="mb-2">Welcome,</p>
+            <h3 class="mb-0"><a [routerLink] = "'/freelancer/user-details'">George Wells</a></h3>
+            <p class="mb-0">@georgewell</p>
+        </div>
+    </div>
+    <div class="settings-menu">
+        <ul>
+            <ng-container *ngFor="let mainMenus of sidebar">
+                <li class="nav-item">
+                    <a [routerLink]="mainMenus.route " class="nav-link" [ngClass]="{active:mainMenus.page == page}">
+                        <i class="material-icons">{{mainMenus.icon}}</i> {{mainMenus.title}}
+                    </a>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+</div>

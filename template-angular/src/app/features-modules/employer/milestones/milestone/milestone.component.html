@@ -1,0 +1,146 @@
+<nav class="user-tabs mb-4">
+    <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+        <li class="nav-item">
+            <a class="nav-link " [routerLink] = "'/employer/milestones/overviews'">Overview & Discussions</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link active" [routerLink] = "'/employer/milestones/milestone'">Milestones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/employer/milestones/tasks'">Tasks</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" [routerLink] = "'/employer/milestones/files'">Files</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/employer/milestones/payments'">Payments</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="my-projects-view">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="">
+                <div class="card ">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col">
+                                <h5 class="card-title">Milestone</h5>
+                            </div>
+                            <div class="col-auto">
+                                <a data-bs-toggle="modal" href="#file" class="btn btn-primary btn-rounded"><i class="fas fa-plus"></i> Add Milestone</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">												
+                        <div class="table-responsive table-box">
+                            <table  class="table table-center table-hover datatable">
+                                <thead class="thead-pink">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Budget</th>
+                                        <th>Progress</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Paid</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr  *ngFor="let miles of lstMilestone;let i = index">
+                                        <td>{{miles.name}}</td>
+                                        <td>${{miles.price}}</td>
+                                        <td>
+                                            <p class="mb-0 orange-text text-center">{{miles.percentage}}</p>
+                                            <div class="progress progress-md mb-0">
+                                                <div class="progress-bar bg-danger" role="progressbar" ng-style="{width: miles.Percentage+'%'}" >{{miles.Percentage}}</div>
+                                            </div>
+                                        </td>
+                                        <td>{{miles.startdate}}</td>
+                                        <td>{{miles.enddate}}</td>
+                                        <td *ngIf = "miles.availability === 'Paid'">
+                                            <span class="badge badge-pill bg-success-dark">{{miles.availability}}</span>
+                                        </td>
+                                        <td  *ngIf = "miles.availability === 'Unpaid'">
+                                            <span class="badge badge-pill bg-grey-dark">{{miles.availability}}</span>
+                                        </td>
+                                        <td  *ngIf = "miles.full === 'After Pay'">
+                                            <a href="javascript:void(0);"><span class="badge badge-pill bg-grey-light">{{miles.full}}</span></a>
+                                        </td>
+                                        <td  *ngIf = "miles.full === 'Pay now'">
+                                            <a href="javascript:void(0);"><span class="badge badge-pill bg-pink-dark">{{miles.full}}</span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>								
+</div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="file">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Files</h4>
+                    <span class="modal-close"><a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times-circle orange-text"></i></a></span>
+                </div>
+                <div class="modal-body">		
+                    <form action="/home">
+                        <div class="modal-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Milestone Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Budget</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Start Date</label>
+                                        <input type="text" class="form-control datetimepicker">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>End Date</label>
+                                        <input type="text" class="form-control datetimepicker">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Progress</label>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="50" class="rangslider" id="myRange">
+                                            <p class="text-muted">Progress <span id="demo"></span> %</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-section text-end">
+                            <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /The Modal -->

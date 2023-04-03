@@ -1,0 +1,142 @@
+<header class="header header-bg">
+  <nav class="navbar navbar-expand-lg header-nav">
+		<div class="navbar-header">
+			<a id="mobile_btn" (click)="toggleSidebar()" href="javascript:void(0);">
+				<span class="bar-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</a>
+			<a [routerLink]="'/home'" class="navbar-brand logo">
+				<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+			</a>
+		</div>
+		<div class="main-menu-wrapper">
+			<div class="menu-header">
+				<a [routerLink]="'/home'" class="menu-logo">
+					<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+				</a>
+				<a id="menu_close" (click)="hideSidebar()" class="menu-close" href="javascript:void(0);">
+					<i class="fas fa-times"></i>
+				</a>
+			</div>
+			<ul class="main-nav" >
+				<ng-container *ngFor="let mainMenus of navbar">
+					<ng-container *ngIf="mainMenus.separateRoute == true">
+					  <li [class.active]="base === mainMenus.base">
+						<a [routerLink]="mainMenus.route">{{ mainMenus.tittle }}</a>
+					  </li>
+					</ng-container>
+					<ng-container *ngIf="mainMenus.separateRoute == false">
+					  <li class="has-submenu" [class.active]="base == mainMenus.base">
+						<a
+						  href="javascript:void(0);"
+						  (click)="mainMenus.showAsTab = !mainMenus.showAsTab"
+						  >{{ mainMenus.tittle }} <i class="fas fa-chevron-down"></i
+						></a>
+						<ul
+						  class="submenu"
+						  [ngClass]="{
+							'show-sub-menu': mainMenus.showAsTab == true
+						  }"
+						>
+						  <ng-container *ngFor="let menu of mainMenus.menu">
+							<ng-container *ngIf="menu.hasSubRoute == false">
+							  <li
+								[class.active]="
+								  base === menu.base && page === menu.page
+								"
+							  >
+								<a [routerLink]="menu.route">{{ menu.menuValue }}</a>
+							  </li>
+							</ng-container>
+							<ng-container *ngIf="menu.hasSubRoute == true">
+							  <li
+								class="has-submenu"
+								[class.active]="page === menu.page"
+							  >
+								<a
+								  (click)="menu.showSubRoute = !menu.showSubRoute"
+								  [routerLink]="menu.route"
+								  >{{ menu.menuValue }}</a
+								>
+								<ul
+								  class="submenu"
+								  [ngClass]="{
+									'show-sub-menu': menu.showSubRoute == true
+								  }"
+								>
+								  <ng-container *ngFor="let subMenu of menu.subMenus">
+									<li
+									  [class.active]="
+										base === subMenu.base &&
+										page === subMenu.page 
+										
+									  "
+									>
+									  <a [routerLink]="subMenu.route">{{
+										subMenu.menuValue
+									  }}</a>
+									</li>
+								  </ng-container>
+								</ul>
+							  </li>
+							</ng-container>
+						  </ng-container>
+						</ul>
+					  </li>
+					</ng-container>
+				  </ng-container>
+			</ul>
+		</div>
+    <ul class="nav header-navbar-rht">
+      <!-- User Menu -->
+      <li class="nav-item dropdown has-arrow main-drop account-item">
+        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+          <span class="user-img">
+            <img src="assets/img/img-04.jpg" alt="" />
+          </span>
+          <span>John</span>
+        </a>
+        <div class="dropdown-menu emp">
+          <div class="drop-head">Account Details</div>
+          <a class="dropdown-item" [routerLink]="'/pages/user-account-details'"
+            ><i class="material-icons">verified_user</i> View profile</a
+          >
+          <div class="drop-head">Projects Settings</div>
+          <a
+            class="dropdown-item"
+            [routerLink]="'/employer/manage-projects/all-projects'"
+            ><i class="material-icons">business_center</i> Projects</a
+          >
+          <a
+            class="dropdown-item"
+            [routerLink]="'/employer/favourites/markedfavourites'"
+            ><i class="material-icons">local_play</i> Favourites</a
+          >
+          <a class="dropdown-item" [routerLink]="'/employer/review'"
+            ><i class="material-icons">pie_chart</i> Reviews</a
+          >
+          <div class="drop-head">Account Details</div>
+          <a
+            class="dropdown-item"
+            [routerLink]="'/employer/profile-settings/basic-settings'"
+          >
+            <i class="material-icons">settings</i> Profile Settings</a
+          >
+          <a class="dropdown-item" [routerLink]="'/home'"
+            ><i class="material-icons">power_settings_new</i> Logout</a
+          >
+        </div>
+      </li>
+      <!-- /User Menu -->
+      <li>
+        <a [routerLink]="'/employer/post-project'" class="login-btn"
+          >Post a Project
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- /Header -->

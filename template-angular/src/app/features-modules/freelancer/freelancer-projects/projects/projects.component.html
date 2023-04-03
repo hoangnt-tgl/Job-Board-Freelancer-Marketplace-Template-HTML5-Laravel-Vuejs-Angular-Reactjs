@@ -1,0 +1,122 @@
+<div class="page-title">
+    <h3>Proposals</h3>
+</div>
+<nav class="user-tabs mb-4">
+    <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink] = "'/freelancer/freelancer-projects/projects-proposals'">My Proposals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/freelancer/freelancer-projects/ongoing-projects'">Ongoing Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/freelancer/freelancer-projects/completed-projects'">Completed Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "'/freelancer/freelancer-projects/cancelled-projects'">Cancelled Projects</a>
+        </li>
+    </ul>
+</nav> 
+
+<!-- Proposals list -->
+<div class="proposals-section">
+    <h3 class="page-subtitle">My Proposals</h3>
+    
+    <!-- Proposals -->
+    <div class="freelancer-proposals"  *ngFor = "let frees of freelist">
+        <div class="project-proposals align-items-center freelancer">
+            <div class="proposals-info">
+                <div class="proposals-detail">
+                    <h3 class="proposals-title">{{frees.content}}</h3>
+                    <div class="proposals-content">
+                        <div class="proposal-img">
+                            <div class="text-md-center">
+                                <img [src]="frees.image" alt="" class="img-fluid">
+                                <h4>{{frees.name}}</h4>
+                                <span class="info-btn">{{frees.customer}}</span>
+                            </div>
+                        </div>
+                        <div class="proposal-client">
+                            <h4 class="title-info">Client Price</h4>
+                            <h2 class="client-price">${{frees.amount}}</h2>
+                            <span class="price-type">( {{frees.level}} )</span>
+                        </div>
+                        <div class="proposal-type">
+                            <h4 class="title-info">Job Type</h4>
+                            <h3>{{frees.type}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-hire-info">
+                    <div class="content-divider-1"></div>
+                    <div class="projects-amount">
+                        <p>Your Price</p>
+                        <h3>${{frees.money}}</h3>
+                        <h5>in {{frees.days}}</h5>
+                    </div>
+                    <div class="content-divider-1"></div>
+                    <div class="projects-action text-center">
+                        <a data-bs-toggle="modal" href="#file" class="projects-btn">Edit Proposals </a>
+                        <a [routerLink] = "'/freelancer/overviews'" class="projects-btn">View Project</a>
+                        <a href="javascript:void(0);" class="proposal-delete">Delete Proposal</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="description-proposal">
+                <h5 class="desc-title">Description</h5>
+                <p>{{frees.para}}<a href="javascript:void(0);" class="text-primary font-bold">Readmore</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Proposals --> 
+    
+</div>
+<!-- /Proposals list -->
+<!-- The Modal -->
+<div class="modal fade" id="file">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">EDIT PROPOSAL</h4>
+                <span class="modal-close"><a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times-circle"></i></a></span>
+            </div>
+            <div class="modal-body">		
+                <form>
+                    <div class="modal-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Cost</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Days</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <form [formGroup]="form">
+                                        <div class="editor">
+                                            <ngx-editor-menu [editor]="editor" [toolbar]="toolbar">
+                                            </ngx-editor-menu>
+                                            <ngx-editor [editor]="editor" formControlName="editorContent">
+                                            </ngx-editor>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section text-end">
+                        <button type="submit" class="btn btn-primary submit-btn">Save Proposal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /The Modal -->

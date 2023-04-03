@@ -1,0 +1,279 @@
+			<!-- Breadcrumb -->
+			<div class="bread-crumb-bar">
+				<div class="container">
+					<div class="row align-items-center inner-banner">
+						<div class="col-md-12 col-12 text-center">
+							<div class="breadcrumb-list">
+								<nav aria-label="breadcrumb" class="page-breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a [routerLink]="'/home'"><img src="assets/img/home-icon.svg" alt="Post Author"> Home</a></li>
+										<li class="breadcrumb-item" aria-current="page">Projects</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Breadcrumb -->
+			
+			<!-- Page Content -->			
+			<div class="content content-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-lg-4 col-xl-3  ">
+						
+							<!-- Search Filter -->
+							<div class="card search-filter">
+								<div class="card-header d-flex justify-content-between">
+									<h4 class="card-title mb-0">FILTERS</h4>
+									<a href="javascript:void(0);">Clear All</a>
+								</div>
+								<div class="card-body">
+								<div class="filter-widget">
+									<h4>Category</h4>
+									<div class="form-group">
+										<select class="form-control select form-select">
+											<option>Select Category</option>
+											<option>Developer</option>
+											<option>UI Developer</option>
+											<option>React Developer</option>
+											<option>.Net Developer</option>
+										</select>
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Location</h4>
+									<div class="form-group">
+										<select class="form-control select form-select">
+											<option>Country, City, Zipcode</option>
+											<option>UK</option>
+											<option>London</option>
+										</select>
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Completed Projects</h4>
+									<div class="form-group">
+										<select class="form-control select form-select">
+											<option>Select Projects</option>
+											<option>Node Projects</option>
+											<option>UI Projects</option>
+										</select>
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Pricing Type</h4>
+									<div class="form-group">
+										<select class="form-control select form-select">
+											<option>Hourly Rate</option>
+											<option>Full Day Rate</option>
+											<option>Half Day Rate</option>
+										</select>
+									</div>
+								</div>								
+								<div class="filter-widget">
+									<h4>Add Skills</h4>
+									<div class="form-group">
+										<span class="badge badge-pill badge-skill">+ Web Design</span>
+										<span class="badge badge-pill badge-skill">+ UI Design</span>
+										<span class="badge badge-pill badge-skill">+ Node Js</span>
+										<span class="badge badge-pill badge-skill">+ Angular</span>
+										<span class="badge badge-pill badge-skill">+ Wordpress</span>
+										<input type="text" class="form-control">
+									</div>
+								</div>	
+								<div class="filter-widget">
+									<h4>Avalability</h4>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_time" checked>
+											<span class="checkmark"></span> Hourly 
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_time">
+											<span class="checkmark"></span> Part Time
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_time">
+											<span class="checkmark"></span>  Full Time
+										</label>
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Experience</h4>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_specialist">
+											<span class="checkmark"></span>  0-1 years
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_exp" checked>
+											<span class="checkmark"></span> 2-5 years
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_exp">
+											<span class="checkmark"></span>  5-8 years
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_exp">
+											<span class="checkmark"></span>  9-12 years
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_exp">
+											<span class="checkmark"></span>  Mastered
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+											<input type="checkbox" name="select_exp">
+											<span class="checkmark"></span> Professional
+										</label>
+									</div>
+								</div>	
+								<div class="filter-widget">
+									<h4>Hourly Rate</h4>
+									<div id="slider-range"></div>
+									<div class="row slider-labels">
+										<div class="col-xs-12 caption">
+											<span id="slider-range-value1"></span> - <span id="slider-range-value2"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+										<form>
+											<input type="hidden" name="min-value" value="">
+											<input type="hidden" name="max-value" value="">
+										</form>
+										</div>
+									</div>
+								</div>								
+								<div class="filter-widget">
+									<h4>Keywords</h4>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Enter Keywords">
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Currency</h4>
+									<div class="form-group">
+										<select class="form-control select form-select">
+											<option>USD</option>
+											<option>Euro</option>
+										</select>
+									</div>
+								</div>
+									<div class="btn-search">
+										<button type="button" class="btn btn-block">Search</button>
+									</div>	
+								</div>
+							</div>
+							<!-- /Search Filter -->
+							
+						</div>
+						
+						<div class="col-md-12 col-lg-8 col-xl-9">
+						
+							<div class="sort-tab">
+								<div class="row align-items-center">
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+										<div class="d-flex align-items-center">
+										   <div class="freelance-view">
+											  <h4>Showing 1 - 12 of 455</h4>
+										   </div>
+										</div>
+									 </div>
+									 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+										<div class="d-flex justify-content-sm-end">
+										   <div class="sort-by">
+											  <select class="custom-select">
+												 <option>Relevance</option>
+												 <option>Rating</option>
+												 <option>Popular</option>
+												 <option>Latest</option>
+												 <option>Free</option>
+											  </select>
+										   </div>
+										</div>
+									</div>
+								</div>
+						   </div>
+							
+							<div class="bootstrap-tags text-start pl-0">
+								<span class="badge badge-pill badge-skills" *ngIf="this.isButtonVisible" >UI/UX Developer <span class="tag-close"><i class="fas fa-times" (click)="this.isButtonVisible = false"></i></span></span> 
+								<span class="badge badge-pill badge-skills" *ngIf="this.isButtonsVisible" >USA <span class="tag-close"><i class="fas fa-times" (click)="this.isButtonsVisible = false"></i></span></span> 
+								<span class="badge badge-pill badge-skills" *ngIf="this.isButtonVisibles" >Hourly <span class="tag-close"><i class="fas fa-times" (click)="this.isButtonVisibles = false"></i></span></span> 
+								<span class="badge badge-pill badge-skills" *ngIf="this.isButtonVisibl" >0-1 years <span class="tag-close"><i class="fas fa-times" (click)="this.isButtonVisibl = false"></i></span></span>
+								<span class="badge badge-pill badge-skills" *ngIf="this.isButtonsVisibles" >USD <span class="tag-close"><i class="fas fa-times" (click)="this.isButtonsVisibles = false"></i></span></span>
+							</div>
+							
+							<div class="row">
+								<!-- Project Content -->
+								<div class="col-md-6 col-lg-12 col-xl-6" *ngFor = "let free of freeprojects" [hidden] = "freeprojects.length === 0">
+								
+									<div class="freelance-widget widget-author">
+										<div class="freelance-content">
+										<a data-bs-toggle="modal" href="#rating" class="favourite"><i class="fas fa-star"></i></a>
+		                                <div class="author-heading">
+		                                    <div class="profile-img">
+		                                        <a [routerLink]="'/freelancer/project-details'">
+		                                            <img [src]="free.img" alt="author">
+		                                        </a>
+		                                    </div>
+		                                    <div class="profile-name">
+		                                        <div class="author-location">{{free.company}}<i class="fas fa-check-circle text-success verified"></i></div>
+		                                    </div>
+											<div class="freelance-info">
+												<h3><a href="#">{{free.role}}</a></h3>
+												<div class="freelance-location mb-1"><i class="fas fa-clock"></i> Posted {{free.ago}}</div>
+												<div class="freelance-location"><i class="fas fa-map-marker-alt me-1"></i>{{free.city}}</div>
+											</div>
+											<div class="freelance-tags">
+												<a href="javascript:void(0);"><span class="badge badge-pill badge-design">{{free.role2}}</span></a>
+												<a href="javascript:void(0);"><span class="badge badge-pill badge-design">{{free.role3}}</span></a>
+												<a href="javascript:void(0);"><span class="badge badge-pill badge-design">{{free.role4}}</span></a>
+											</div>
+											<div class="freelancers-price">$ {{free.price}}-${{free.price2}}</div>
+		                                </div>
+										<div class="counter-stats">
+		                                        <ul>
+		                                            <li>
+		                                                <h3 class="counter-value">{{free.days}} Days Left</h3>
+		                                                <h5>Expiry</h5>
+		                                            </li>
+		                                            <li>
+		                                                <h3 class="counter-value">{{free.proposal}}</h3>
+		                                                <h5>Proposals</h5>
+		                                            </li>
+		                                            <li>
+		                                                <h3 class="counter-value"><span class="jobtype">{{free.type}}</span></h3>
+		                                                <h5>Job Type</h5>
+		                                            </li>
+		                                        </ul>
+		                                    </div>
+		                                </div>
+										<div class="cart-hover">
+											<a [routerLink]="'/freelancer/project-details'" class="btn-cart" tabindex="-1">Bid Now</a>
+										</div>
+		                            </div>
+								</div>
+
+								
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>
+			<!-- /Page Content -->

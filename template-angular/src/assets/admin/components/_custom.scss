@@ -1,0 +1,100 @@
+.table_header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	margin-bottom: 15px;
+	.dataTables_length {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+	}
+	.dataTables_filter {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+	}
+	label{
+		margin-bottom: 0px;
+	}
+	.form-control {
+		min-height: 35px;
+	}
+  }
+  .table_footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 1.5rem 1.5rem;
+	.pagination_section {
+	  display: flex;
+	  justify-content: flex-end;
+	}
+  }
+  .table-scroll {
+	// max-height: calc(100vh - 350px);
+	overflow-x: auto;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .filter-card {
+	-o-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+	height:0px;
+	margin-bottom: 0px;
+	// visibility: hidden;
+	border: none;
+}
+.filter-card.filter-show  {
+	height: 96px;
+	margin-bottom: 30px;
+	border: 1px solid #E4E4E4;
+	// visibility: visible;
+}
+.filter-card.filter-show {
+	.form-group {
+		label {
+			opacity: 1;
+		}
+	}
+}
+.show-sub-menu {
+	display: block !important;
+	transition: all 0.5s;
+  }
+  .hide-sub-menu {
+	display: none !important;
+	transition: all 0.5s;
+  }
+  .earing-chart{
+
+	  .apexcharts-gridlines-horizontal {
+		display: none;
+	  }
+	  .apexcharts-ycrosshairs {
+		display: none;
+	  }
+  }
+  .form-check {
+    margin-bottom: 0.125rem;
+}
+@media (max-width: 991.98px) {
+	.filter-card.filter-show  {
+		height: 166px;
+	}
+}
+@media (max-width: 575.98px) {
+	.filter-card.filter-show  {
+		height: 302px;
+	}
+	.table_header {
+		flex-direction: column;
+		gap: 5px;
+		.dataTables_filter {
+
+			justify-content:flex-end;
+		}
+	  }
+}

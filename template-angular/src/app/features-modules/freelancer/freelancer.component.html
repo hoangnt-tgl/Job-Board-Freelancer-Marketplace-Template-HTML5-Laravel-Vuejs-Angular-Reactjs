@@ -1,0 +1,45 @@
+<app-freelancerheader></app-freelancerheader>
+<ng-container *ngIf="freelancer">
+    <!-- Breadcrumb -->
+    <div class="bread-crumb-bar" *ngIf="breadcrum">
+        <div class="container">
+            <div class="row align-items-center inner-banner">
+                <div class="col-md-12 col-12 text-center">
+                    <div class="breadcrumb-list">
+                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a [routerLink]="'/home'"><img src="assets/img/home-icon.svg" alt="Post Author"> Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Freelancer</li>
+                                <li class="breadcrumb-item" aria-current="page">{{page}}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+                <!-- Page Content -->			
+                <div class="content content-page">
+                    <div class="container-fluid">
+                        <div class="row">
+                        
+                            <!-- sidebar -->
+                            <div class="col-xl-3 col-md-4">
+                                <app-sidemenu></app-sidemenu>
+                            </div>
+                            <!-- /sidebar -->
+                            
+                            <div  class="col-xl-9 col-md-8">
+                                <router-outlet></router-outlet>
+                            </div>								
+                                    
+                        </div>					
+                    </div>
+                </div>				
+                <!-- /Page Content -->
+</ng-container>
+<ng-container *ngIf="!freelancer">
+    <router-outlet></router-outlet>
+</ng-container>

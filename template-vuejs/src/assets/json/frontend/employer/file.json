@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img": "file-logo.png",
+        "name": "Image for Section background",
+        "name1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name2": "Readmore",
+        "name3": "Png",
+        "name4": "20KB"
+    },
+    {
+        "id": 2,
+        "img": "file-logo.png",
+        "name": "Image for Footer",
+        "name1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name2": "Readmore",
+        "name3": "Png",
+        "name4": "20KB"
+    },
+    {
+        "id": 3,
+        "img": "file-logo.png",
+        "name": "Image for Login",
+        "name1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "name2": "Readmore",
+        "name3": "Png",
+        "name4": "20KB"
+    }
+]

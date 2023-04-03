@@ -1,0 +1,106 @@
+<div class="page-title">
+	<h3>Manage Projects</h3>
+</div>
+<nav class="user-tabs mb-4">
+	<ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+		<li class="nav-item">
+			<a class="nav-link " [routerLink]="'/freelancer/overviews'">Overview & Discussions</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" [routerLink]="'/freelancer/milestone'">Milestones</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" [routerLink]="'/freelancer/tasks'">Tasks</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" [routerLink]="'/freelancer/files'">Files</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link " [routerLink]="'/freelancer/payments'">Payments</a>
+		</li>
+	</ul>
+</nav>
+
+<!-- project list -->
+<div class="my-projects-view">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="pro-post">
+				<div class="project-table">
+					<div class="card-body">
+						<h4>TASKS</h4>
+						<div class="table-responsive table-box">
+							<table datatable class="table table-center table-hover datatable">
+								<thead class="thead-pink">
+									<tr>
+										<th>Task Name</th>
+										<th>Milestone</th>
+										<th>Due Date</th>
+										<th>Description</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Research 101</td>
+										<td>Research</td>
+										<td>20th Oct 2021</td>
+										<td><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+											<a href="#" class="read-text">Readmore</a>
+										</td>
+										<td>
+											<span class="badge badge-pill bg-outline-green">
+												Completed
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Research 102</td>
+										<td>Research</td>
+										<td>25th Oct 2021</td>
+										<td><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+											<a href="#" class="read-text">Readmore</a>
+										</td>
+										<td>
+											<span class="badge badge-pill bg-outline-red">
+												Pending
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Research 103</td>
+										<td>Research</td>
+										<td>27th Oct 2021</td>
+										<td><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+											<a href="#" class="read-text">Readmore</a>
+										</td>
+										<td>
+											<span class="badge badge-pill bg-outline-red">
+												Pending
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Research 104</td>
+										<td>Research</td>
+										<td>27th Oct 2021</td>
+										<td><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+											<a href="#" class="read-text">Readmore</a>
+										</td>
+										<td>
+											<span class="badge badge-pill bg-outline-red">
+												Pending
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>												
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+</div>
+<!-- project list -->

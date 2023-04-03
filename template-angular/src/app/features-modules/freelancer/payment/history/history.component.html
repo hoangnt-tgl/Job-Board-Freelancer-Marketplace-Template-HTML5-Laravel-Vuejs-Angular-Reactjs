@@ -1,0 +1,164 @@
+					<!-- Breadcrumb -->
+                    <div class="bread-crumb-bar">
+                        <div class="container">
+                            <div class="row align-items-center inner-banner">
+                                <div class="col-md-12 col-12 text-center">
+                                    <div class="breadcrumb-list">
+                                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a [routerLink]="'/home'"><img src="assets/img/home-icon.svg" alt="Post Author"> Home</a></li>
+                                                <li class="breadcrumb-item" aria-current="page">Freelancer</li>
+                                                <li class="breadcrumb-item" aria-current="page">Payments</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Breadcrumb -->
+    <!-- Page Content -->			
+    <div class="content content-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-md-4 theiaStickySidebar">
+                    <div class="settings-widget">
+                        <div class="settings-header d-sm-flex flex-row flex-wrap text-center text-sm-start align-items-center">
+                            <a [routerLink] = "'/freelancer/user-details'"><img alt="profile image" src="assets/img/user/avatar-1.jpg" class="avatar-lg rounded-circle"></a>
+                            <div class="ms-sm-3 ms-md-0 ms-lg-3 mt-2 mt-sm-0 mt-md-2 mt-lg-0">
+                                <p class="mb-2">Welcome,</p>
+                                <h3 class="mb-0"><a [routerLink] = "'/freelancer/user-details'">John Danie S.</a></h3>
+                                <p class="mb-0">@johndaniee</p>
+                            </div>
+                        </div>
+                        <div class="settings-menu">
+                            <ul>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/dashboards'" class="nav-link ">
+                                        <i class="material-icons">verified_user</i> Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/freelancer-projects/projects-proposals'" class="nav-link ">
+                                        <i class="material-icons">business_center</i> Projects
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/freelancer-favourite/favourite'" class="nav-link ">
+                                        <i class="material-icons">local_play</i> Favourites
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/reviews'" class="nav-link ">
+                                        <i class="material-icons">record_voice_over</i> Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/portfolio'" class="nav-link ">
+                                        <i class="material-icons">pie_chart</i> Portfolio
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/message'" class="nav-link">
+                                        <i class="material-icons">chat</i> Messages
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/membership'" class="nav-link ">
+                                        <i class="material-icons">person_add</i> Membership
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/verify-identitys'" class="nav-link ">
+                                        <i class="material-icons">person_pin</i> Verify Identity
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/freelancer-payments/withdraw-money'" class="nav-link active">
+                                        <i class="material-icons">wifi_tethering</i> Payments
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/freelancer/profile-settings'" class="nav-link">
+                                        <i class="material-icons">settings</i>  Settings
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a [routerLink] = "'/home'" class="nav-link">
+                                        <i class="material-icons">power_settings_new</i> Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>					
+                </div>	
+                <div class="col-xl-9 col-md-8">
+                    <nav class="user-tabs mb-4">
+                        <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link " [routerLink] = "'/freelancer/freelancer-payments/withdraw-money'">Withdraw Funds</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" [routerLink] = "'/freelancer/freelancer-payments/invoices'"> Invoices</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" [routerLink] = "'/freelancer/freelancer-payments/history'"> Transaction History</a>
+                            </li>
+                        </ul>
+                    </nav>	
+                    <div class="transaction-table card">
+                        <div class="card-header">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col">
+                                    <h5 class="card-title">All Transactions</h5>
+                                </div>
+                                <div class="col-auto d-flex align-items-center flex-wrap transaction-shortby">
+                                        <div class="export-item sort-show sort-by"><i class="fas fa-download"></i> Export</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive table-box">
+                                <table class="table" >
+                                    <thead>
+                                        <tr class="thead-pink">
+                                            <th>Invoice Number</th>
+                                            <th>Client Name</th>
+                                            <th>Created Date</th>
+                                            <th>Amount</th>
+                                            <th>Due Date</th>
+                                            <th>Status</th>
+                                            <th>Paid On</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table table-hover table-center">
+
+                                        <tr *ngFor="let invoice of lstInvoice;let i = index">
+                                            <td><a [routerLink] = "'/view-invoice'" class="invoice-id">{{invoice.invoices}}</a></td>
+                                            <td>{{invoice.client}}</td>
+                                            <td>{{invoice.lastvisit}}</td>
+                                            <td>${{invoice.amount}}</td>
+                                            <td>{{invoice.duedate}}</td>
+                                            <td *ngIf = "invoice.availability === 'Paid'">
+                                                <span class="badge bg-success-light">{{invoice.availability}}</span>
+                                            </td>
+                                            <td  *ngIf = "invoice.availability === 'Partially Paid'">
+                                                <span class="badge bg-warning-light">{{invoice.availability}}</span>
+                                            </td>
+                                            <td *ngIf = "invoice.availability === 'Overdue'">
+                                                <span class="badge bg-danger-light">{{invoice.availability}}</span>
+                                            </td>
+                                            <td>{{invoice?.paidon | date : 'dd MMM yyyy, h.mm a'}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+                                        
+        </div>	
+    </div>	
+    
+    <!-- /Page Content -->

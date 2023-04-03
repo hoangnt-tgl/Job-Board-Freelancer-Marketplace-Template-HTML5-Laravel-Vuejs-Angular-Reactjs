@@ -1,0 +1,58 @@
+<nav class="user-tabs mb-4">
+    <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+        <li class="nav-item">
+            <a class="nav-link "[routerLink] = "'/freelancer/freelancer-settings/profiles-settings'">Profile Settings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink] = "'/freelancer/freelancer-settings/change-passwords'">Change Password</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink] = "'/freelancer/freelancer-settings/delete-account'">Delete Account</a>
+        </li>
+    </ul>
+</nav>
+<div class="setting-content">
+    <div class="pro-card">
+        <div class="pro-head">
+            <h3 class="pro-title without-border mb-0">Delete Account</h3>
+        </div>
+        <div class="pro-body">
+            <form>
+                <div class="form-group">
+                    <label>Please Explain Further**</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Password*</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="btn btn-primary click-btn btn-plan" data-bs-toggle="modal" href="#delete-acc">Delete Account</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade custom-modal" id="delete-acc">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-body del-modal">
+                <form>
+                    <div class="text-center pt-0 mb-5">
+                        <i class="fas fa-exclamation-triangle fa-3x"></i>
+                        <h3>Are you sure? Want to delete Account</h3>
+                    </div>
+                    <div class="submit-section text-center">
+                        <button data-bs-dismiss="modal" class="btn btn-primary black-btn click-btn me-1">Cancel</button>
+                        <button type="submit" class="btn btn-primary click-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /The Modal -->

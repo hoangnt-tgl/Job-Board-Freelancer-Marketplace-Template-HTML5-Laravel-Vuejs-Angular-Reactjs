@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "img": "review-01.jpg",
+        "name": "Davis Payerf",
+        "name1": "CEO",
+        "rating": "4.7",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat orci enim, mattis nibh aliquam dui, nibh faucibus aenean."
+    },
+    {
+        "id": 2,
+        "img": "review-02.jpg",
+        "name": "Davis Payerf",
+        "name1": "PROJECT LEAD",
+        "rating": "4.8",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat orci enim, mattis nibh aliquam dui, nibh faucibus aenean."
+    },
+    {
+        "id": 3,
+        "img": "review-03.jpg",
+        "name": "Davis Payerf",
+        "name1": "TEAM LEAD",
+        "rating": "5.0",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat orci enim, mattis nibh aliquam dui, nibh faucibus aenean."
+    },
+    {
+        "id": 4,
+        "img": "review-02.jpg",
+        "name": "Davis Payerf",
+        "name1": "PROJECT LEAD",
+        "rating": "3.2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat orci enim, mattis nibh aliquam dui, nibh faucibus aenean."
+    }
+]

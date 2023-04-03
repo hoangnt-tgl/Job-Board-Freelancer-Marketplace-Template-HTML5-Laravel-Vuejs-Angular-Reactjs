@@ -1,0 +1,571 @@
+<template>
+<div>
+       <!-- Main Wrapper -->
+        <div class="main-wrapper">
+			<!-- Header -->
+            <layout-freelancerprojectheader></layout-freelancerprojectheader>
+			<!-- /Header -->
+
+            <!-- Breadcrumb -->
+			<div class="bread-crumb-bar">
+				<div class="container">
+					<div class="row align-items-center inner-banner">
+						<div class="col-md-12 col-12 text-center">
+							<div class="breadcrumb-list">
+								<nav aria-label="breadcrumb" class="page-breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><router-link to="/index"><img src="../../../assets/img/home-icon.svg" alt=""> Home</router-link></li>
+										<li class="breadcrumb-item" aria-current="page">PROJECT DETAILS</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Breadcrumb -->
+			
+			<!-- Page Content -->
+			<div class="content">
+				<div class="container">	
+					<div class="row">
+						<div class="col-lg-8 col-md-12">
+							<div class="developer-box project-box-view">
+								<h2>3D Renders and Amazon Product Store images/Video</h2>
+								<h3><router-link to="/company-profile">Amaze Tech</router-link> <i class="fas fa-check-circle"></i></h3>
+								<ul class="develope-list-rate project-rate align-items-center">
+									<li><i class="fas fa-clock"></i>Poster 1 hour ago</li>
+									<li class="full-time">Full time</li>
+								</ul>
+								<div class="proposal-box">
+									<div class="proposal-value">
+										<h4>$20.00</h4>
+										<span>( Per Hour )</span>
+									</div>
+									<a data-bs-toggle="modal" href="#hire" class="btn favourites-btn btn-primary favour-border">Favourite <i class="fas fa-heart"></i></a>
+									<a data-bs-toggle="modal" href="#file" class="btn proposal-btn btn-primary">Send Proposal <i class="fas fa-long-arrow-alt-right"></i> </a>
+								</div>
+							</div>
+							<div class="pro-view project-details-view">		
+								<!-- Job Detail -->
+								<div class="post-widget">
+									<div class="pro-content">
+										<div class="row">
+											<div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Job Expiry </p>
+														<h6>4 Days Left</h6>
+													</div>
+													<div class="post-job-icon blue-color">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/icon-15.svg">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Location</p>
+														<h6><img src="../../../assets/img/flags/de.png" height="16" alt="Lang"> Germany</h6>
+													</div>
+													<div class="post-job-icon orange-color">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/icon-14.svg">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Proposals</p>
+														<h6>15 Received</h6>
+													</div>
+													<div class="post-job-icon pink-color">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/icon-13.svg">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Price type</p>
+														<h6>Fixed</h6>
+													</div>
+													<div class="post-job-icon green-color">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/icon-12.svg">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-widget project-duration">
+									<div class="pro-content">
+										<div class="row">
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Developer Type </p>
+														<h6>Individual</h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-01.png">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Project Duration</p>
+														<h6>Less than a month</h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-02.png">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Level </p>
+														<h6>Intermediate </h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-03.png">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Job Type</p>
+														<h6>Remote Job</h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-04.png">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Experience</p>
+														<h6>+5 years</h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-05.png">
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 d-flex">
+												<div class="pro-post job-type d-flex align-items-center">
+													<div class="pro-post-head">
+														<p>Qualifications</p>
+														<h6>Under Garduate</h6>
+													</div>
+													<div class="post-job-icon">
+														<img class="img-fluid" alt="" src="../../../assets/img/icon/exp-icon-06.png">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Job Detail -->
+								
+								<!-- Senior Animator  -->
+								<div class="pro-post widget-box">
+									<h3 class="pro-title">Senior Animator</h3>
+									<div class="pro-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. </p>
+									</div>
+								</div>	
+								<!-- /Senior Animator  -->
+								
+								<!-- Skills Required  -->
+								<div class="pro-post project-widget widget-box">
+									<h3 class="pro-title">Skills Required</h3>
+									<div class="pro-content">
+										<div class="tags">
+											<a href="javascript:void(0);"><span class="badge badge-pill badge-design">After Effects</span></a>
+											<a href="javascript:void(0);"><span class="badge badge-pill badge-design">Illustrator</span></a>
+											<a href="javascript:void(0);"><span class="badge badge-pill badge-design">HTML</span></a>
+											<a href="javascript:void(0);"><span class="badge badge-pill badge-design">Whiteboard</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Skills Required  -->
+								
+								<!-- Project Requirements  -->
+								<div class="pro-post project-widget widget-box">
+									<h3 class="pro-title">project requirements</h3>
+									<div class="pro-content">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="requirement-img">
+													<a href="javascript:void(0);"><img class="img-fluid" alt="" src="../../../assets/img/require-01.jpg"></a>
+													<div class="file-name">
+														<h4>Filename</h4>
+														<h5>PDF</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="requirement-img">
+													<a href="javascript:void(0);"><img class="img-fluid" alt="" src="../../../assets/img/require-01.jpg"></a>
+													<div class="file-name">
+														<h4>Filename</h4>
+														<h5>DOCX</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Project Requirements  -->
+								
+							</div>
+						</div>
+					
+						<!-- Blog Sidebar -->
+						<div class="col-lg-4 col-md-12 sidebar-right theiaStickySidebar project-client-view">	
+
+							<div class="freelance-widget widget-author mt-2 pro-post">
+								<div class="freelance-content">
+                                <div class="author-heading">
+                                    <div class="profile-img">
+                                        <router-link to="/company-profile">
+                                            <img src="../../../assets/img/company/img-1.png" alt="author">
+											<span class="project-verified"><i class="fas fa-check-circle"></i></span>
+                                        </router-link>
+                                    </div>
+                                    <div class="profile-name">
+                                        <div class="author-location"><router-link to="/company-profile">Amaze Tech </router-link></div>
+                                    </div>
+									<div class="freelance-info">
+										<h4>UI/UX Designer</h4>
+										<div class="rating mapgridrating1">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star "></i>
+											<i class="fas fa-star"></i>
+											<span class="average-rating">4.7 (32)</span>
+										</div>
+										<div class="freelance-location"><i class="fas fa-map-marker-alt me-1"></i>Alabama, USA</div>
+									</div>
+									<button type="button" class="btn btn-lg btn-primary rounded-pill"><i class="fab fa-whatsapp me-2"></i>Follow</button>
+									<div class="follow-details">
+										<div class="row">
+											<div class="col-6 py-4 text-center">
+
+											<!-- Heading -->
+											<h6 class="text-uppercase text-muted">
+												Following
+											</h6>
+
+											<!-- Value -->
+											<h4 class="mb-0">49</h4>
+
+										  </div>
+										  <div class="col-6 py-4 text-center border-start">
+
+											<!-- Heading -->
+											<h6 class="text-uppercase text-muted">
+											  Followers
+											</h6>
+
+											<!-- Value -->
+											<h4 class="mb-0">422</h4>
+
+										  </div>
+										</div>
+									</div>
+									<div class="pro-member">
+										<div class="row align-items-center">
+											<div class="col">
+												<h6 class="text-start mb-0">
+													Member Since 
+												</h6>
+											</div>
+											<div class="col-auto">
+												<span >January 1, 2021</span>
+											</div>
+										</div>
+										<hr class="my-3">
+										<div class="row align-items-center">
+											<div class="col">
+												<h6 class=" text-start mb-0">
+													Total Jobs
+												</h6>
+											</div>
+											<div class="col-auto">
+												<span >127</span>
+											</div>
+										</div>
+										<hr class="my-3">
+										<div class="row align-items-center">
+											<div class="col">
+												<h6 class=" text-start mb-0">
+													<i class="fab fa-instagram me-2"></i>Instagram
+												</h6>
+											</div>
+											<div class="col-auto">
+												<span >@johnthedon</span>
+											</div>
+										</div>
+										<hr class="my-3">
+										<div class="row align-items-center">
+											<div class="col">
+												<h6 class="text-start mb-0">
+													<i class="fab fa-linkedin me-2"></i>LinkedIn
+												</h6>
+											</div>
+											<div class="col-auto">
+												<span >johnsullivan</span>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                           </div>
+						   
+						   <!-- Attachments Widget -->	
+							<div class="pro-post widget-box post-widget pb-0 client-about">
+								<h3 class="pro-title">About The CLIENT</h3>
+								<div class="pro-content">
+									<div class="row">
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>Jobs Posted</p>
+												<h6 class="bg-red">48</h6>
+											</div>
+										</div>
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>Hire rate</p>
+												<h6 class="bg-blue">22</h6>
+											</div>
+										</div>
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>open jobs</p>
+												<h6 class="bg-violet">48</h6>
+											</div>
+										</div>
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>Total spent</p>
+												<h6 class="bg-yellow">22</h6>
+											</div>
+										</div>
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>Hires</p>
+												<h6 class="bg-pink">48</h6>
+											</div>
+										</div>
+										<div class="col-6 d-flex">
+											<div class="pro-post client-list">
+												<p>Active</p>
+												<h6 class="bg-green">22</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Attachments Widget -->	
+												
+							<!-- Link Widget -->	
+							<div class="pro-post widget-box post-widget link-project">
+								<h3 class="pro-title">Profile Link</h3>
+								<div class="pro-content pt-0">
+									<div class="form-group profile-group mb-0">
+										<div class="input-group">
+											<input type="text" class="form-control" value="https://www.kofejob.com/developer/daren/12454687">
+											<div class="input-group-append">
+												<button class="btn btn-success sub-btn" type="submit"><i class="fa fa-clone"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Link Widget -->	
+
+							<!-- Share Widget -->	
+							<div class="pro-post widget-box post-widget develop-social-link">
+								<h3 class="pro-title">Share</h3>
+								<ul class="social-link-profile">
+									<li><a href="javascript:void(0);"><i class="fas fa-share-alt"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fab fa-telegram"></i></a></li>
+								</ul>
+							</div>
+							<!-- /Share Widget -->
+						
+						</div>
+						<!-- /Blog Sidebar -->
+						
+					</div>
+				</div>
+			</div>		
+			<!-- /Page Content -->
+           
+            <!-- Footer -->
+                <layout-footer />
+            <!-- /Footer -->
+        </div>
+        <!-- /Main Wrapper -->
+
+
+        <!-- The Modal -->
+		<div class="modal fade custom-modal" id="hire">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content bg-modal">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="text-center pt-0 mb-4">
+							<img src="../../../assets/img/logo-01.png" alt="logo" class="img-fluid mb-1">
+							<h5 class="modal-title">Discuss your project with David</h5>
+						</div>
+						<form>
+							<div class="modal-info">
+								<div class="row">
+									<div class="col-12 col-md-12">
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="First name & Lastname">
+										</div> 
+										<div class="form-group">
+											<input type="email" name="name" class="form-control" placeholder="Email Address">
+										</div> 
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="Phone Number">
+										</div> 
+										<div class="form-group">
+											<textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+										</div> 
+										<div class="form-group row">
+											<div class="col-12 col-md-4 pr-0">
+												<label class="file-upload">
+													Add Attachment <input type="file" />
+												</label>
+											</div>											
+											<div class="col-12 col-md-8">
+												<p class="mb-1">Allowed file types: zip, pdf, png, jpg</p>
+												<p>Max file size: 50 MB</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <router-link to="/dashboard">
+							<div class="submit-section text-center">
+								<button type="submit" class="btn btn-primary btn-block submit-btn">Hire Now</button>
+							</div>
+                            </router-link>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /The Modal -->
+		
+		<!-- The Modal -->
+		<div class="modal fade" id="file">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">SEND PROPOSALS</h4>
+						<span class="modal-close"><a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times-circle orange-text"></i></a></span>
+					</div>
+					<div class="modal-body">	
+						<div class="modal-info">
+							<form>
+								<div class="feedback-form">
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<input type="text" class="form-control" placeholder="Your Price">
+										</div>
+										<div class="col-md-6 form-group">
+											<input type="email" class="form-control" placeholder="Estimated Hours">
+										</div>
+										<div class="col-md-12 form-group">
+											<textarea rows="5" class="form-control" placeholder="Cover Letter"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="proposal-features">
+									<div class="proposal-widget proposal-success">
+										<label class="custom_check">
+											<input type="checkbox" name="select_time"><span class="checkmark"></span>
+											<span class="proposal-text">Stick this Proposal to the Top</span>
+											<span class="proposal-text float-end">$12.00</span>
+										</label>
+										<p>The sticky proposal will always be displayed on top of all the proposals.</p>
+									</div>
+									<div class="proposal-widget proposal-light">
+										<label class="custom_check">
+											<input type="checkbox" name="select_time"><span class="checkmark"></span>
+											<span class="proposal-text">$ Make Sealed Proposal</span>
+											<span class="proposal-text float-end">$7.00</span>
+										</label>
+										<p>The sealed proposal will be sent to the project author only it will not be visible publically.</p>
+									</div>
+									<div class="proposal-widget proposal-danger">
+										<label class="custom_check">
+											<input type="checkbox" name="select_time"><span class="checkmark"></span>
+											<span class="proposal-text">$ Make Sealed Proposal</span>
+											<span class="proposal-text float-end">$15.00</span>								
+										</label>
+										<p>The featured proposal will have a distinctive color and popped up between other proposals to get the author's attention.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 submit-section">
+										<label class="custom_check">
+											<input type="checkbox" name="select_time">
+											<span class="checkmark"></span> I agree to the Terms And Conditions
+										</label>
+									</div>
+                                    <router-link to="/freelancer-project-proposals">
+									<div class="col-md-12 submit-section text-end">
+										<button class="btn btn-primary submit-btn" type="submit">SUBMIT PROPOSAL</button>
+									</div>
+                                    </router-link>
+								</div>											
+							</form>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /The Modal -->
+
+        </div>
+
+</template>
+<script>
+	export default {
+		 mounted() {
+		},
+        computed: {
+            currentPath() {
+                return this.$route.name;
+            }
+    
+        },  
+        data() {
+        return {
+          activeClass: 'active',
+        };
+                //  isactive : true
+      },
+	}
+	</script>

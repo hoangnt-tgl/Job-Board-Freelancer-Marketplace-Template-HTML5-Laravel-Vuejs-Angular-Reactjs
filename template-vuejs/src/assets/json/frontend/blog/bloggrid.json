@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img": "blog-01.jpg",
+        "img1": "img-02.jpg",
+        "name": "David Lee",
+        "date": "4 Apr 2021",
+        "description": "Your next job starts right here",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+        "id": 2,
+        "img": "blog-02.jpg",
+        "img1": "img-03.jpg",
+        "name": "Deborah Angel",
+        "date": "3 Mar 2021",
+        "description": "People who completed NAND?",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+        "id": 3,
+        "img": "blog-03.jpg",
+        "img1": "img-04.jpg",
+        "name": "Darren Elder",
+        "date": "3 Dec 2021",
+        "description": "Kofejob - How to get job through online?",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+        "id": 4,
+        "img": "blog-04.jpg",
+        "img1": "img-05.jpg",
+        "name": "Sofia Brient",
+        "date": "2 Dec 2021",
+        "description": "Job Openings in top Companies",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+        "id": 5,
+        "img": "blog-05.jpg",
+        "img1": "img-02.jpg",
+        "name": "Marvin Campbell",
+        "date": "1 Dec 2021",
+        "description": "How to crack the interview easily - Kofejob",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+        "id": 6,
+        "img": "blog-06.jpg",
+        "img1": "img-03.jpg",
+        "name": "Paul Berthold",
+        "date": "3 Nov 2021",
+        "description": "Recommended technical languages to study",
+        "description1": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor."
+    }
+]
